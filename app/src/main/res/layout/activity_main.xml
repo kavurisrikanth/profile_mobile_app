@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/hello_world"-->
+    <!--android:textAlignment="center"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/chibiImg"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/chibiImg"
+        android:layout_width="318dp"
+        android:layout_height="161dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:contentDescription="@string/img_desc"
+        android:src="@drawable/chibi_img"
+        app:layout_constraintBottom_toTopOf="@id/myLabelID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/myLabelID"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:text="@string/values_label"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/myList"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chibiImg" />
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+
+    <ListView
+        android:id="@+id/myList"
+        android:layout_width="227dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:paddingBottom="6dp"
+        android:paddingEnd="6dp"
+        android:paddingStart="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/myLabelID"
+        app:layout_constraintTop_toBottomOf="@id/chibiImg"
+        app:layout_constraintVertical_bias="0.71" />
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/myLabelID"-->
+
+
+</android.support.constraint.ConstraintLayout>
