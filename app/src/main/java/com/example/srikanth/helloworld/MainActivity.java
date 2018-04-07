@@ -11,6 +11,7 @@ import android.util.Base64;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
@@ -110,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
         currentActivity = this;
 
         if(data == null) {
+            Toast.makeText(this, "Data is null!", Toast.LENGTH_LONG).show();
             RequestQueue queue = Volley.newRequestQueue(this);
             jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
                     jsonURL,
