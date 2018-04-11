@@ -1,7 +1,13 @@
 <resources>
-    <string name="app_name">Srikanth Kavuri</string>
+    <string name="app_name">I\'m Present!</string>
     <string name="hello_world">Hello, world!</string>
-    <string name="photo_desc">Image description.</string>
+    <string name="photo_desc">A picture of my ugly mug.</string>
     <string name="logo_desc">The MSIT program logo.</string>
     <string name="values_label">Student Details</string>
+    <string name="check_in">Check In</string>
+    <string name="check_out">Check Out</string>
+    <string name="profile_link">Profile</string>
+    <string name="my_name">Srikanth Kavuri</string>
+    <string name="view_attendance">View Attendance</string>
+    <string name="attendance_heading">Your Attendance</string>
 </resources>

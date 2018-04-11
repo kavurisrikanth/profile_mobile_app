@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/hello_world"-->
+    <!--android:textAlignment="center"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/chibiImg"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="parent" />-->
+
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/header"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintBottom_toTopOf="@id/myListBox"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.14">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="292dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:contentDescription="@string/logo_desc"-->
+            <!--android:gravity="start"-->
+            <!--android:src="@drawable/msit_logo" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/myPhotoID"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:background="@null"-->
+            <!--android:contentDescription="@string/photo_desc"-->
+            <!--android:gravity="end"-->
+            <!--android:scaleType="fitCenter" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--ID is "toolbar"-->
+    <include
+        layout="@layout/appbar"
+        />
+
+    <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:id="@+id/myImageBox"-->
+        <!--android:layout_width="170dp"-->
+        <!--android:layout_height="170dp"-->
+        <!--app:layout_constraintBottom_toTopOf="@id/myListBox"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/header"-->
+        <!--app:layout_constraintVertical_bias="0.267">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/myPhotoID"-->
+            <!--android:layout_width="170dp"-->
+            <!--android:layout_height="170dp"-->
+            <!--android:contentDescription="@string/photo_desc"-->
+            <!--android:src="@drawable/chibi_img" />-->
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+    <ImageView
+        android:id="@+id/myPhotoID"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:contentDescription="@string/photo_desc"
+        android:src="@drawable/chibi_img"
+        />
+
+    <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:id="@+id/myListBox"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="112dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent">-->
+
+        <!--<ListView-->
+            <!--android:id="@+id/myList"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="297dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:paddingBottom="6dp"-->
+            <!--android:paddingEnd="6dp"-->
+            <!--android:paddingStart="6dp" />-->
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+    <ListView
+        android:id="@+id/myList"
+        android:layout_width="match_parent"
+        android:layout_height="297dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/myPhotoID"
+        android:layout_gravity="center"
+        android:layout_marginBottom="19dp"
+        android:paddingBottom="6dp"
+        android:paddingEnd="6dp"
+        android:paddingStart="6dp" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="368dp"-->
+    <!--android:layout_height="92dp"-->
+    <!--android:orientation="vertical"-->
+    <!--tools:layout_editor_absoluteX="8dp"-->
+    <!--tools:layout_editor_absoluteY="8dp"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintBottom_toTopOf="<>"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--&gt;-->
+    <!---->
+    <!--</LinearLayout>-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/myLabelID"-->
+
+
+</RelativeLayout>
